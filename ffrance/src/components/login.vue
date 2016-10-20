@@ -30,7 +30,7 @@
         <router-link to='/signup' class="weui-btn weui-btn_plain-primary">Sign Up</router-link>
       </div>
 
-      <router-link to='' class="forget">Forget?</router-link></a>
+      <router-link to='/forget' class="forget">Forget?</router-link></a>
 
       <div class="relation">
         <p>第三方账号登录</p>

@@ -10,6 +10,7 @@ Vue.use(VueResource);
 
 import login from './components/login.vue'
 import signup from './components/sign_up.vue'
+import forget from './components/forget.vue'
 
 const router = new VueRouter({
   routes:[
@@ -20,6 +21,10 @@ const router = new VueRouter({
     {
       path: '/signup',
       component: signup
+    },
+    {
+      path: '/forget',
+      component: forget
     },
     {
       path: '/*',
