@@ -11,6 +11,7 @@ Vue.use(VueResource);
 import login from './components/login.vue'
 import signup from './components/sign_up.vue'
 import forget from './components/forget.vue'
+import home from './components/home.vue'
 
 const router = new VueRouter({
   routes:[
@@ -25,6 +26,10 @@ const router = new VueRouter({
     {
       path: '/forget',
       component: forget
+    },
+    {
+      path: '/home',
+      component: home
     },
     {
       path: '/*',

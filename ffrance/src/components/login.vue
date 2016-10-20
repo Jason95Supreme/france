@@ -26,7 +26,7 @@
       </div>
 
       <div class="button-sp-area">
-        <a href="javascript" class="weui-btn weui-btn_plain-default">Login</a>
+        <router-link to='/home' class="weui-btn weui-btn_plain-default">Login</router-link>
         <router-link to='/signup' class="weui-btn weui-btn_plain-primary">Sign Up</router-link>
       </div>
 
