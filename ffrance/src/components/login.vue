@@ -30,7 +30,7 @@
         <router-link to='/signup' class="weui-btn weui-btn_plain-primary">Sign Up</router-link>
       </div>
 
-      <router-link to='' class="forget">forget password?</router-link></a>
+      <router-link to='' class="forget">Forget?</router-link></a>
 
       <div class="relation">
         <p>第三方账号登录</p>
@@ -101,6 +101,7 @@ export default {
   margin-bottom 3%
 .weui-cell_hd i
   font-size 1.1em
+  color #ffebcd
 
 .weui-cell_hd
   width 20%
@@ -115,8 +116,8 @@ export default {
   width 90%
 
 .weui-btn_plain-default
-  color #fff
-  border 1px solid #fff
+  color #ccc
+  border 1px solid #ccc
   margin-bottom 5%
 
 .weui-btn_plain-primary
@@ -127,6 +128,8 @@ export default {
 .forget
   color #fff
   margin-left 5%
+  font-size .8em
+  font-family '微软雅黑'
 
 .relation
   margin 50px auto 20px

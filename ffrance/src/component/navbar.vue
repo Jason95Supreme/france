@@ -1,6 +1,8 @@
 <template>
-  <div class="navbar">
-    <router-link to='/login' class="fa fa-angle-double-left"></router-link>
+  <div class="page">
+     <div class="navbar">
+      <router-link to='/login' class="fa fa-angle-double-left"></router-link>
+    </div>
   </div>
 </template>
 
@@ -18,16 +20,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='stylus'>
+.page
+  position abusolute
 
 .navbar
+  max-width 768px
   width 100%
-  height 50px
+  height 45px
   background-color #ffebcd
-  position fixed
   top 0
+  position fixed
 
 .fa
   color #fff
-  font-size 3em
-  padding 0 10px
+  font-size 2.2em
+  padding 5px 10px
 </style>

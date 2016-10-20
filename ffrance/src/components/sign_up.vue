@@ -58,7 +58,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='stylus'>
-
+.page
+  max-width 768px
+  width 100%
+  height 100%
+  position fixed
+  left 0
+  right 0
+  margin 0 auto
+  overflow auto
 
 .weui-content
   font-family '微软雅黑'
@@ -68,6 +76,12 @@ export default {
   color #ffebcd
   font-size 4em
   margin 50px auto
+
+.weui-cell_hd
+  width 30%
+
+.weui-cell_bd
+  width 70%
 
 .weui-cell:before
   display none
