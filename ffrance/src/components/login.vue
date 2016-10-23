@@ -13,7 +13,7 @@
           <label class="weui-label"><i class="fa fa-user-secret"></i></label>
         </div>
         <div class="weui-cell_bd">
-          <input type="text" name="user" class="weui-input" placeholder='username'>
+          <input type="text" name="user" class="weui-input" placeholder='Username'>
         </div>
       </div>
       <div class="weui-cell">
@@ -21,23 +21,19 @@
           <label class="weui-label"><i class="fa fa-key"></i></label>
         </div>
         <div class="weui-cell_bd">
-          <input type="password" name="password" class="weui-input" placeholder='password'>
+          <input type="password" name="password" class="weui-input" placeholder='Password'>
         </div>
       </div>
 
       <div class="button-sp-area">
         <router-link to='/home' class="weui-btn weui-btn_plain-default">Login</router-link>
-        <router-link to='/signup' class="weui-btn weui-btn_plain-primary">Sign Up</router-link>
       </div>
 
-      <router-link to='/forget' class="forget">Forget?</router-link></a>
-
-      <div class="relation">
-        <p>第三方账号登录</p>
-        <a href="http://web2.qq.com/"><i class="fa fa-qq"></i></a>
-        <a href="https://login.sina.com.cn"><i class="fa fa-weibo"></i></a>
-        <a href="https://wx.qq.com/"><i class="fa fa-weixin"></i></a>
+      <div class="extra">
+        <span>Don't have any account?</span>
+        <router-link to='/signup' class="sign">Sign up</router-link>
       </div>
+
     </div>
   </div>
 
@@ -85,7 +81,7 @@ export default {
 
 .france p
   font-size 3em
-  color #ffebcd
+  color #fff
   font-family '黑体'
   text-align center
   margin-top 10%
@@ -93,15 +89,27 @@ export default {
 
 .weui-cell:before
   display none
+.weui-cell:after
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  height: 1px;
+  border-bottom: 1px solid #ccc;
+  left: 5px;
 
 .weui-cell
-  border-bottom 1px solid #fff
+/*  border-bottom 1px solid #eee*/
   color #fff
   height 30px
   margin-bottom 3%
+  margin-left 15px
+  margin-right 15px
+  padding 10px 5px
+
 .weui-cell_hd i
   font-size 1.1em
-  color #ffebcd
+  color #fff
 
 .weui-cell_hd
   width 20%
@@ -110,40 +118,29 @@ export default {
   width 80%
 
 .button-sp-area
-  margin-top 15%
+  margin-top 20%
 
 .weui-btn
   width 90%
 
 .weui-btn_plain-default
+  color #fff
+  margin-bottom 5%
+  border-radius 24px
+  border none
+  background-color #ff3366
+  opacity .9
+
+.extra
+  text-align: center
+
+.extra span
   color #ccc
-  border 1px solid #ccc
-  margin-bottom 5%
+  letter-spacing 0px
+  font-size 13px
+  font-family '黑体'
 
-.weui-btn_plain-primary
-  color #ffebcd
-  border 1px solid #ffebcd
-  margin-bottom 5%
-
-.forget
+.sign
   color #fff
-  margin-left 5%
-  font-size .8em
-  font-family '微软雅黑'
-
-.relation
-  margin 50px auto 20px
-  text-align center
-
-.relation p
-  color #ffebcd
-  font-family '微软雅黑'
-  font-size 16px
-  margin-bottom 10px
-
-.relation i
-  color #fff
-  font-size 25px
-  margin 0 30px
-
+  font-family '黑体'
 </style>

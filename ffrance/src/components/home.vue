@@ -1,16 +1,16 @@
 <template>
   <div class="page">
-    <navbar></navbar>
+    <detail></detail>
   </div>
 
 </template>
 
 <script>
-import navbar from '../component/navbar.vue'
+import detail from '../component/detail.vue'
 
 export default {
   components:{
-    navbar
+    detail
   },
   data () {
     return {

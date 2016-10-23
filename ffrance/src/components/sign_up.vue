@@ -78,10 +78,10 @@ export default {
   margin 50px auto
 
 .weui-cell_hd
-  width 30%
+  width 35%
 
 .weui-cell_bd
-  width 70%
+  width 65%
 
 .weui-cell:before
   display none
@@ -102,4 +102,5 @@ export default {
 .weui-btn
   width 90%
   border 1px solid #ffebcd
+  border-radius 24px
 </style>

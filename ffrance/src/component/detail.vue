@@ -1,7 +1,7 @@
 <template>
   <div class="page">
      <div class="navbar">
-      <router-link to='/login' class="fa fa-angle-double-left"></router-link>
+      <router-link to='/login' class="fa fa-bars"></router-link>
     </div>
   </div>
 </template>
