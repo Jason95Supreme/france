@@ -1,7 +1,8 @@
 <template>
   <div class="page">
      <div class="navbar">
-      <router-link to='/login' class="fa fa-bars"></router-link>
+<!--       <router-link to='/login' class="fa fa-bars"></router-link> -->
+      <span class="weui-pull-left">微信</span>
     </div>
   </div>
 </template>
@@ -27,12 +28,10 @@ export default {
   max-width 768px
   width 100%
   height 45px
-  background-color #ff3366
+  background-color #000
   top 0
   position fixed
 
-.fa
+.weui-pull-left
   color #fff
-  font-size 2.2em
-  padding 5px 10px
 </style>

@@ -41,13 +41,13 @@
 
 <script>
 export default {
-
-  data () {
+  data(){
     return {
 
     }
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -115,6 +115,10 @@ export default {
 
 .weui-cell_bd
   width 80%
+
+.weui-input::-webkit-input-placeholder
+  color #fff
+  font-size .8em
 
 .button-sp-area
   margin-top 20%
