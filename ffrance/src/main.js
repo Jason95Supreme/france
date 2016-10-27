@@ -3,7 +3,6 @@ import App from './App'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import weui from '../node_modules/weui/dist/style/weui.min.css'
-import font from '../font-awesome/css/font-awesome.min.css'
 
 Vue.use(VueRouter);
 Vue.use(VueResource);

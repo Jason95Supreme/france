@@ -10,7 +10,7 @@
 
       <div class="weui-cell">
         <div class="weui-cell_hd">
-          <label class="weui-label"><i class="fa fa-user-secret"></i></label>
+          <label class="weui-label fa-user"></label>
         </div>
         <div class="weui-cell_bd">
           <input type="text" name="user" class="weui-input" placeholder='Username'>
@@ -18,7 +18,7 @@
       </div>
       <div class="weui-cell">
         <div class="weui-cell_hd">
-          <label class="weui-label"><i class="fa fa-key"></i></label>
+          <label class="weui-label fa-key"></label>
         </div>
         <div class="weui-cell_bd">
           <input type="password" name="password" class="weui-input" placeholder='Password'>
@@ -80,12 +80,12 @@ export default {
   z-index -1
 
 .france p
-  font-size 3em
+  font-size 4em
   color #fff
   font-family '黑体'
   text-align center
   margin-top 10%
-  margin-bottom 5%
+  margin-bottom 30%
 
 .weui-cell:before
   display none
@@ -99,7 +99,6 @@ export default {
   left: 5px;
 
 .weui-cell
-/*  border-bottom 1px solid #eee*/
   color #fff
   height 30px
   margin-bottom 3%
@@ -143,4 +142,18 @@ export default {
 .sign
   color #fff
   font-family '黑体'
+
+.fa-user
+  background-image url(../img/username.png)
+  background-size 100% 100%
+  width 1.5em
+  height 1.5em
+  margin-left 5px
+
+.fa-key
+  background-image url(../img/password.png)
+  background-size 100% 100%
+  width 1.5em
+  height 1.5em
+  margin-left 5px
 </style>
