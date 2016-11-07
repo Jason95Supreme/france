@@ -20,8 +20,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='stylus'>
-.page
-  position abusolute
+/*.page
+  position abusolute*/
 
 .navbar
   max-width 768px

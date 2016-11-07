@@ -1,21 +1,18 @@
 <template>
+
   <div class="page">
     <detail></detail>
     <div class="weui-content">
       <div class="weui-cells">
         <a class="weui-cell weui-cell_access" href='javascript:;'>
           <div class="weui-cell__hd"></div>
-          <div class="weui-cell__bd"><p>标题文字</p></div>
-          <div class="weui-cell__ft">说明文字</div>
-        </a>
-        <a class="weui-cell weui-cell_access" href='javascript:;'>
-          <div class="weui-cell__hd"></div>
-          <div class="weui-cell__bd"><p>标题文字</p></div>
-          <div class="weui-cell__ft"><p>说明文字</p></div>
+          <div class="weui-cell__bd">
+            <p>新的朋友</p>
+          </div>
         </a>
       </div>
     </div>
-  <tabbar people='ivu-icon-ios-people-outline' paperplane='ivu-icon-ios-paperplane-outline' person='ivu-icon-ios-person-outline'></tabbar>
+    <tabbar chatbubble='ivu-icon-ios-chatbubble-outline' paperplane='ivu-icon-ios-paperplane-outline' person='ivu-icon-ios-person-outline'></tabbar>
   </div>
 
 </template>
@@ -39,6 +36,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='stylus'>
 .page
+/*  position fixed*/
   max-width 768px
   left 0
   right 0
@@ -52,35 +50,16 @@ export default {
 .weui-cells
   margin-top 45px
 
+.weui-cells:before
+  display none
+
 .weui-cell
   height 60px
 
-.weui-cell:before
-  display none
-
-.weui-cell:after
-  content " "
-  position absolute
-  left 0
-  bottom 0
-  right 0
-  height 1px
-  border-top 1px solid #d9d9d9
-  color #d9d9d9
-
-.weui-cell_access:hover
-  color #000
-
 .weui-cell__hd
-  background-image url(../img/portrait.jpg)
+  background-image url(../img/ss.jpg)
   background-size 100% 100%
   width 45px
   height 45px
-  box-shadow 0 0 1px #eee
   margin-right 15px
-
-.weui-cell__ft:after
-  display none
-
-
 </style>

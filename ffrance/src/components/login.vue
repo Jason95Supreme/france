@@ -80,7 +80,7 @@ export default {
   z-index -1
 
 .france p
-  font-size 4em
+  font-size 3.5em
   color #fff
   font-family '黑体'
   text-align center

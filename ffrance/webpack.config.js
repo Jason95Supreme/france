@@ -26,6 +26,8 @@ module: {
 loaders: [
 // 解析.vue文件
 { test: /\.vue$/, loader: 'vue' },
+// 解析ivew文件
+{ test: /iview\\.*?js$/, loader: 'babel' },
 // 转化ES6的语法
 { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
 // 编译css并自动添加css前缀
