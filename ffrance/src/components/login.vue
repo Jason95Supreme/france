@@ -153,11 +153,14 @@ export default {
   width 1.5em
   height 1.5em
   margin-left 5px
+  margin-bottom 10px
 
 .fa-key
   background-image url(../img/password.png)
   background-size 100% 100%
   width 1.5em
   height 1.5em
-  margin-left 5px
+  margin-left 1px
+  margin-bottom 10px
+
 </style>
