@@ -52,6 +52,7 @@ export default {
   mounted(){
     const vm = this
     vm.$store.dispatch('setDisplay',true)
+    vm.$store.dispatch('setIcon','me')
   }
 }
 </script>
@@ -66,6 +67,10 @@ export default {
   background: url(../img/me.jpg) no-repeat;
   background-size: 100% 100%;
   background-position: -50% 0;
+  max-width: 768px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .content{
   position: absolute;

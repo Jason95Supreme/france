@@ -19,6 +19,7 @@ export default {
   mounted(){
     const vm = this
     vm.$store.dispatch('setDisplay',true)
+    vm.$store.dispatch('setIcon','home')
   }
 }
 </script>
@@ -33,6 +34,10 @@ export default {
   text-transform: uppercase;
   background: url(../img/home.jpg) no-repeat;
   background-size: 100% 100%;
+  max-width: 768px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 </style>
