@@ -1,7 +1,6 @@
 <template>
   <div class="page">
 
-    <navbar></navbar>
     <div class="weui-content">
 
       <section class="sign">
@@ -35,18 +34,17 @@
     </div>
 
     <div class="button-sp-area">
-        <a href="javascript" class="weui-btn weui-btn_plain-default" id="showToast">Sign Up</a>
+        <router-link to='/login' class="weui-btn weui-btn_plain-default">Sign Up</router-link>
     </div>
   </div>
 
 </template>
 
 <script>
-import navbar from '../component/navbar.vue'
 
 export default {
   components:{
-    navbar
+
   },
   data () {
     return {

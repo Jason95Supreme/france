@@ -1,54 +1,48 @@
 <template>
-<!--   <div class="page"> -->
-    <div class="weui-tabbar">
-      <router-link to='/home' class="weui-tabbar__item weui-tabbar__item_on">
-        <i class="ivu-icon  weui-tabbar__icon" :class="[chatbubble,'ivu-icon-ios-chatbubble']"></i>
-        <p class="weui-tabbar__label">微信</p>
+  <div class="weui-tabbar">
+      <router-link to='/home' class="weui-tabbar__item">
+          <i class="weui-tabbar__icon fa fa-university"></i>
+          <p class="weui-tabbar__label">Home</p>
       </router-link>
+      <router-link to='/how' class="weui-tabbar__item">
+         <i class="weui-tabbar__icon fa fa-quora"></i>
+          <p class="weui-tabbar__label">How</p>
       </router-link>
-      <router-link to='/contact' class="weui-tabbar__item weui-tabbar__item_on">
-        <i class="ivu-icon  weui-tabbar__icon" :class="[people,'ivu-icon-ios-people']"></i>
-        <p class="weui-tabbar__label">通讯录</p>
+      <router-link to='/fy' class="weui-tabbar__item">
+          <i class="weui-tabbar__icon fa fa-paper-plane-o"></i>
+          <p class="weui-tabbar__label">Fly</p>
       </router-link>
-      <router-link to='/airplane' class="weui-tabbar__item weui-tabbar__item_on">
-        <i class="ivu-icon weui-tabbar__icon" :class="[paperplane,'ivu-icon-ios-paperplane']"></i>
-        <p class="weui-tabbar__label">发现</p>
+      <router-link to='/m' class="weui-tabbar__item">
+          <i class="weui-tabbar__icon fa fa-gg"></i>
+          <p class="weui-tabbar__label">Me</p>
       </router-link>
-      <router-link to='/me' class="weui-tabbar__item weui-tabbar__item_on">
-        <i class="ivu-icon weui-tabbar__icon" :class="[person,'ivu-icon-ios-person']"></i>
-        <p class="weui-tabbar__label">我</p>
-      </router-link>
-    </div>
-<!--   </div>
- -->
+  </div>
 </template>
 
 <script>
-export default {
-  props:{
-    chatbubble:String,
-    people:String,
-    paperplane:String,
-    person:String,
-  },
 
+export default {
+  components:{
+
+  },
   data () {
     return {
-      'ivu-icon-ios-chatbubble':true,
-      'ivu-icon-ios-people-outline':true,
-      'ivu-icon-ios-paperplane-outline':true,
-      'ivu-icon-ios-person-outline':true,
-      }
-  },
-  computed:{
 
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='stylus'>
+.weui-tabbar{
+  background-color: transparent;
 
-.weui-tabbar
-  position fixed
+}
+.weui-tabbar__label{
+  color: orange;
+}
+.fa{
+  color: orange;
+}
 </style>

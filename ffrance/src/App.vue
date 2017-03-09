@@ -1,20 +1,52 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <transition :name="isAnimate">
+      <router-view></router-view>
+    </transition>
+  <tabbar v-if="isDisplay"></tabbar>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'app',
-  components: {
+  computed:{
+    isDisplay(){
+      return this.$store.getters.getData
+    },
+    isAnimate(){
+      return this.$store.getters.getAnimate
+    }
+  },
+  watch: {
+  '$route' (to, from) {
+    const vm = this
+    const toDepth = to.path.split('/')[1].length
+    const fromDepth = from.path.split('/')[1].length
 
-  }
+    let transitionName = toDepth < fromDepth ? 'bounce' : 'vbounce'
+    vm.$store.dispatch('setAnimate',transitionName)
+    }
+  },
+  // mounted(){
+  //   const vm = this
+  //   vm.$store.dispatch('setAnimate',bounce)
+  // }
 }
 </script>
 
 <style lang='stylus'>
-
+.bounce-enter-active {
+  animation: slideInRight .5s;
+}
+.bounce-leave-active {
+  animation: slideOutLeft .5s;
+}
+.vbounce-enter-active {
+  animation: slideInLeft .5s;
+}
+.vbounce-leave-active {
+  animation: slideOutRight .5s;
+}
 
 </style>

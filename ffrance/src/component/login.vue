@@ -13,7 +13,7 @@
           <label class="weui-label fa-user"></label>
         </div>
         <div class="weui-cell_bd">
-          <input type="text" name="user" class="weui-input" placeholder='Username'>
+          <input type="text" name="user" class="weui-input" placeholder='Username' v-model="username">
         </div>
       </div>
       <div class="weui-cell">
@@ -21,12 +21,12 @@
           <label class="weui-label fa-key"></label>
         </div>
         <div class="weui-cell_bd">
-          <input type="password" name="password" class="weui-input" placeholder='Password'>
+          <input type="password" name="password" class="weui-input" placeholder='Password' v-model="password">
         </div>
       </div>
 
-      <div class="button-sp-area">
-        <router-link to='/home' class="weui-btn weui-btn_plain-default">Login</router-link>
+      <div class="button-sp-area" @click="login">
+        <a class="weui-btn weui-btn_plain-default">Login</a>
       </div>
 
       <div class="extra">
@@ -40,11 +40,43 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data(){
     return {
-
+      username:'',
+      password:'',
     }
+  },
+  methods:{
+    login(){
+        let vm = this
+        const clientId = `user`
+        const clientSecret = 'web'
+        const username = vm.username
+        const password = vm.password
+      axios.post('/api/2.1.0/passport/get-token',{
+        clientId, clientSecret, username, password
+      })
+      .then(function (response) {
+        if(response.data.Code === 0){
+          const token = response.data.Data.AccessToken;
+          localStorage.setItem("token",JSON.stringify(token))
+          console.log(response.data.Message)
+          vm.$router.push('/home')
+        }else{
+          console.log(response.data.Message)
+        }
+      })
+      .catch(function (response) {
+        console.log(response);
+      });
+    },
+  },
+  mounted(){
+    const vm = this
+    vm.$store.dispatch('setDisplay',false)
   }
 }
 
@@ -52,11 +84,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='stylus'>
-
-
-.weui-content
-  background-image url(../img/france.jpg)
-  background-size 100% 100%
+.page
   position fixed
   max-width 768px
   left 0
@@ -64,6 +92,10 @@ export default {
   margin 0 auto
   width 100%
   height 100%
+  background-image url(../img/france.jpg)
+  background-size 100% 100%
+
+.weui-content
   font-size 20px
   overflow auto
 
@@ -140,7 +172,7 @@ export default {
 .extra span
   color #ccc
   letter-spacing 0px
-  font-size 13px
+  font-size 0.7em
   font-family '黑体'
 
 .sign
@@ -154,7 +186,8 @@ export default {
   height 1.5em
   margin-left 5px
   margin-bottom 10px
-
+  &:before
+    display none
 .fa-key
   background-image url(../img/password.png)
   background-size 100% 100%
@@ -162,5 +195,7 @@ export default {
   height 1.5em
   margin-left 1px
   margin-bottom 10px
+  &:before
+    display none
 
 </style>
