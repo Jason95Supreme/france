@@ -1,7 +1,10 @@
 <template>
   <div class="page">
-    <div>Home</div>
-    <div>Back</div>
+    <div class="title">
+      <span>只</span><span>为</span><span>遇</span><span>见</span><span>最</span><span>好</span><span>的</span><span>你</span>
+    </div>
+    <tabbar></tabbar>
+
   </div>
 </template>
 
@@ -31,7 +34,6 @@ export default {
   height: 100%;
   position: fixed;
   color: #000;
-  text-transform: uppercase;
   background: url(../img/home.jpg) no-repeat;
   background-size: 100% 100%;
   max-width: 768px;
@@ -39,5 +41,16 @@ export default {
   right: 0;
   margin: 0 auto;
 }
-
+.title{
+  text-align: center;
+  padding: 20px 0
+}
+.title span{
+  width: 20px;
+  height: 20px;
+  background-color: #D6F7AD;
+  transform: rotate(90deg);
+  margin: 0 5px;
+  border-radius: 50%;
+}
 </style>

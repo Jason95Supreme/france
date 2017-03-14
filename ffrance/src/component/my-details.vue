@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+    <router-link to='/m'>点我返回</router-link>
     <p>那就看见客人</p>
   </div>
 </template>
@@ -16,7 +17,8 @@ export default {
     }
   },
   mounted(){
-
+    const vm = this
+    vm.$store.dispatch('setDisplay',false)
   }
 }
 </script>
@@ -29,8 +31,6 @@ export default {
   position: fixed;
   color: #000;
   background-color: #fff;
-  background-size: 100% 100%;
-  background-position: -50% 0;
   max-width: 768px;
   left: 0;
   right: 0;

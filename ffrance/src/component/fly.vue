@@ -1,6 +1,7 @@
 <template>
   <div class="page">
     <div>This page will take you fly in the sky</div>
+    <tabbar></tabbar>
   </div>
 </template>
 
@@ -30,7 +31,6 @@ export default {
   height: 100%;
   position: fixed;
   color: #000;
-  text-transform: uppercase;
   background: url(../img/fly.jpg) no-repeat;
   background-size: 100% 100%;
   max-width: 768px;

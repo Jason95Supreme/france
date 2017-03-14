@@ -1,40 +1,28 @@
 <template>
   <div class="page">
     <div class="content">
-      <div class="weui-cells">
-        <router-link to='/m/mydetail' class="weui-cell weui-cell_access" href="javascript:;">
-            <div class="weui-cell__bd">
-                <p>我的信息</p>
-            </div>
-            <div class="weui-cell__ft">
-            </div>
+      <div class="outer_box">
+        <router-link to='/m/mydetail' class="inner_box one">
+          <span>家</span>
         </router-link>
-        <a class="weui-cell weui-cell_access" href="javascript:;">
-            <div class="weui-cell__bd">
-                <p>cell standard</p>
-            </div>
-            <div class="weui-cell__ft">
-            </div>
-        </a>
+        <div class="inner_box two">
+          <span>远方</span>
+        </div>
       </div>
-      <div class="weui-cells">
-        <a class="weui-cell weui-cell_access" href="javascript:;">
-            <div class="weui-cell__bd">
-                <p>cell standard</p>
-            </div>
-            <div class="weui-cell__ft">
-            </div>
-        </a>
-        <a class="weui-cell weui-cell_access" href="javascript:;">
-            <div class="weui-cell__bd">
-                <router-link to='/login' class="out">退出登录</router-link>
-            </div>
-            <div class="weui-cell__ft">
-            </div>
-        </a>
+      <div class="outer_box">
+        <div class="inner_box thr">
+          <span>梦想</span>
+        </div>
+        <div class="inner_box for">
+          <span>回望</span>
+        </div>
       </div>
+      <router-link to='/login' class="sign_up">
+        <i class="fa fa-sign-out"></i>
+      </router-link>
 
     </div>
+    <tabbar></tabbar>
   </div>
 </template>
 
@@ -66,7 +54,6 @@ export default {
   color: #000;
   background: url(../img/me.jpg) no-repeat;
   background-size: 100% 100%;
-  background-position: -50% 0;
   max-width: 768px;
   left: 0;
   right: 0;
@@ -74,25 +61,62 @@ export default {
 }
 .content{
   position: absolute;
-  bottom: 57px;
+  top: 0;
+  bottom: 55px;
+  width: 100%;
+  background-color: transparent;
+}
+.outer_box{
+  display: table;
   width: 100%;
   height: 50%;
+}
+.inner_box{
+  display: table-cell;
+  width: 50%;
+  height: 50%;
+  border: 1px solid transparent;
+  background-color: rgba(0,0,0,0.1);
+  text-align: center;
+  vertical-align: middle;
+}
+.inner_box span{
+  font-size: 3rem;
+  color: #F4E7D3;
+  font-family: "微软雅黑";
+}
+.one{
+  border-bottom-right-radius: 200px;
+}
+.two{
+  border-bottom-left-radius: 200px;
+}
+.thr{
+  border-top-right-radius: 200px;
+}
+.for{
+  border-top-left-radius: 200px;
+}
+.sign_up{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  border-radius: 50%;
   background-color: transparent;
+
 }
-.weui-cells{
-  background-color: transparent;
+
+.fa-sign-out{
+  font-size: 5rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
-.weui-cells:after, .weui-cells:before{
-  display: none;
-}
-.weui-cell:before{
-  border-top: 2px solid #d9d9d9;
-  left: 0;
-}
-.weui-cell_access{
-  background-color: rgba(0,0,0,.15);
-}
-.out{
-  color: red;
-}
+
 </style>

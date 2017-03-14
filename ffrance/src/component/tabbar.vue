@@ -3,25 +3,25 @@
     <router-link to='/home' class="weui-tabbar__item" :class="Icon">
       <a class="weui-tabbar__item" @click="home">
           <i class="weui-tabbar__icon fa fa-university"></i>
-          <p class="weui-tabbar__label hom">Home</p>
+          <p class="weui-tabbar__label hom">Paysage</p>
       </a>
     </router-link>
     <router-link to='/how' class="weui-tabbar__item" :class="Icon">
       <a class="weui-tabbar__item" @click="how">
          <i class="weui-tabbar__icon fa fa-quora"></i>
-          <p class="weui-tabbar__label ho">How</p>
+          <p class="weui-tabbar__label ho">Culture</p>
       </a>
     </router-link>
     <router-link to='/fy' class="weui-tabbar__item" :class="Icon">
       <a class="weui-tabbar__item" @click="fly">
           <i class="weui-tabbar__icon fa fa-paper-plane-o"></i>
-          <p class="weui-tabbar__label f">Fly</p>
+          <p class="weui-tabbar__label f">Art</p>
       </a>
     </router-link>
     <router-link to='/m' class="weui-tabbar__item" :class="Icon">
       <a class="weui-tabbar__item" @click="me">
             <i class="weui-tabbar__icon fa fa-gg"></i>
-            <p class="weui-tabbar__label m">Me</p>
+            <p class="weui-tabbar__label m">La vie</p>
       </a>
     </router-link>
   </div>

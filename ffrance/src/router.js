@@ -40,7 +40,7 @@ export default[
     },
     {
       path: '*',
-      component: login
+      redirect: login
     },
 
 ]

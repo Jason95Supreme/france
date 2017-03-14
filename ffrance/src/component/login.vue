@@ -51,27 +51,28 @@ export default {
   },
   methods:{
     login(){
-        let vm = this
-        const clientId = `user`
-        const clientSecret = 'web'
-        const username = vm.username
-        const password = vm.password
-      axios.post('/api/2.1.0/passport/get-token',{
-        clientId, clientSecret, username, password
-      })
-      .then(function (response) {
-        if(response.data.Code === 0){
-          const token = response.data.Data.AccessToken;
-          localStorage.setItem("token",JSON.stringify(token))
-          console.log(response.data.Message)
-          vm.$router.push('/home')
-        }else{
-          console.log(response.data.Message)
-        }
-      })
-      .catch(function (response) {
-        console.log(response);
-      });
+    //     let vm = this
+    //     const clientId = `user`
+    //     const clientSecret = 'web'
+    //     const username = vm.username
+    //     const password = vm.password
+    //   axios.post('/api/2.1.0/passport/get-token',{
+    //     clientId, clientSecret, username, password
+    //   })
+    //   .then(function (response) {
+    //     if(response.data.Code === 0){
+    //       const token = response.data.Data.AccessToken;
+    //       localStorage.setItem("token",JSON.stringify(token))
+    //       console.log(response.data.Message)
+    //       vm.$router.push('/home')
+    //     }else{
+    //       console.log(response.data.Message)
+    //     }
+    //   })
+    //   .catch(function (response) {
+    //     console.log(response);
+    //   });
+    this.$router.push('/home')
     },
   },
   mounted(){
