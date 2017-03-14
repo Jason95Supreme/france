@@ -2,23 +2,23 @@
   <div class="page">
     <div class="content">
       <div class="outer_box">
-        <router-link to='/m/mydetail' class="inner_box one">
-          <span>家</span>
+        <router-link to='/login' class="inner_box">
+          <span>离开</span>
         </router-link>
-        <div class="inner_box two">
+        <div class="inner_box">
           <span>远方</span>
         </div>
       </div>
       <div class="outer_box">
-        <div class="inner_box thr">
+        <div class="inner_box">
           <span>梦想</span>
         </div>
-        <div class="inner_box for">
+        <div class="inner_box">
           <span>回望</span>
         </div>
       </div>
-      <router-link to='/login' class="sign_up">
-        <i class="fa fa-sign-out"></i>
+      <router-link to='/m/mydetail' class="sign_up">
+
       </router-link>
 
     </div>
@@ -64,7 +64,6 @@ export default {
   top: 0;
   bottom: 55px;
   width: 100%;
-  background-color: transparent;
 }
 .outer_box{
   display: table;
@@ -75,27 +74,14 @@ export default {
   display: table-cell;
   width: 50%;
   height: 50%;
-  border: 1px solid transparent;
-  background-color: rgba(0,0,0,0.1);
   text-align: center;
   vertical-align: middle;
+  border: 3px solid #fff;
 }
 .inner_box span{
-  font-size: 3rem;
+  font-size: 2rem;
   color: #F4E7D3;
   font-family: "微软雅黑";
-}
-.one{
-  border-bottom-right-radius: 200px;
-}
-.two{
-  border-bottom-left-radius: 200px;
-}
-.thr{
-  border-top-right-radius: 200px;
-}
-.for{
-  border-top-left-radius: 200px;
 }
 .sign_up{
   width: 150px;
@@ -104,10 +90,10 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-
   border-radius: 50%;
-  background-color: transparent;
-
+  background: url(../img/head.jpg) no-repeat;
+  background-size: 100% 100%;
+  border: 4px solid #fff;
 }
 
 .fa-sign-out{

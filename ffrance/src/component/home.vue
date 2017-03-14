@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="title">
-      <span>只</span><span>为</span><span>遇</span><span>见</span><span>最</span><span>好</span><span>的</span><span>你</span>
+
     </div>
     <tabbar></tabbar>
 
@@ -45,12 +45,5 @@ export default {
   text-align: center;
   padding: 20px 0
 }
-.title span{
-  width: 20px;
-  height: 20px;
-  background-color: #D6F7AD;
-  transform: rotate(90deg);
-  margin: 0 5px;
-  border-radius: 50%;
-}
+
 </style>

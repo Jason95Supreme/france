@@ -69,6 +69,9 @@ export default {
   left: 50%;
   transform: translateX(-50%);
 }
+.weui-tabbar:before{
+  border-top: 1px solid #95E1D3
+}
 .weui-tabbar__label,.fa{
   color: #11BFAE;
 }
