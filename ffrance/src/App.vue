@@ -23,7 +23,6 @@ export default {
     const vm = this
     const toDepth = to.path.split('/')[1].length
     const fromDepth = from.path.split('/')[1].length
-
     let transitionName = toDepth < fromDepth ? 'bounce' : 'vbounce'
     vm.$store.dispatch('setAnimate',transitionName)
     }
@@ -37,16 +36,16 @@ export default {
 
 <style lang='stylus'>
 .bounce-enter-active {
-  animation: slideInRight .5s;
+  animation: slideInRight .5s ease-out;
 }
 .bounce-leave-active {
-  animation: slideOutLeft .5s;
+  animation: slideOutLeft .5s ease-out;
 }
 .vbounce-enter-active {
-  animation: slideInLeft .5s;
+  animation: slideInLeft .5s ease-out;
 }
 .vbounce-leave-active {
-  animation: slideOutRight .5s;
+  animation: slideOutRight .5s ease-out;
 }
 
 </style>

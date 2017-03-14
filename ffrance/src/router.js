@@ -5,6 +5,7 @@ import home from './component/home.vue'
 import how from './component/how'
 import fy from './component/fly'
 import m from './component/me'
+import mydetail from './component/my-details'
 
 Vue.component('tabbar',require('./component/tabbar'))
 
@@ -32,6 +33,10 @@ export default[
     {
       path:'/m',
       component: m
+    },
+    {
+      path:'/m/mydetail',
+      component: mydetail,
     },
     {
       path: '*',

@@ -2,13 +2,13 @@
   <div class="page">
     <div class="content">
       <div class="weui-cells">
-        <a class="weui-cell weui-cell_access" href="javascript:;">
+        <router-link to='/m/mydetail' class="weui-cell weui-cell_access" href="javascript:;">
             <div class="weui-cell__bd">
-                <p>cell standard</p>
+                <p>我的信息</p>
             </div>
             <div class="weui-cell__ft">
             </div>
-        </a>
+        </router-link>
         <a class="weui-cell weui-cell_access" href="javascript:;">
             <div class="weui-cell__bd">
                 <p>cell standard</p>
