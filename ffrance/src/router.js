@@ -8,6 +8,7 @@ import m from './component/me'
 import mydetail from './component/my-details'
 
 Vue.component('tabbar',require('./component/tabbar'))
+Vue.component('navbar',require('./component/navbar'))
 
 export default[
     {

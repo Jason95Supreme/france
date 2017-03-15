@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <div>This page will take you fly in the sky</div>
+
     <tabbar></tabbar>
   </div>
 </template>
@@ -37,7 +37,7 @@ export default {
   left: 0;
   right: 0;
   margin: 0 auto;
-
+  overflow: auto;
 }
 
 </style>
