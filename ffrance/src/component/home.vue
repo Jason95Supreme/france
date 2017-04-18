@@ -2,7 +2,9 @@
   <div class="page">
     <navbar></navbar>
     <div class="title">
-
+      <div class="page__bd page__bd_spacing">
+        <a class="weui-btn weui-btn_default" @click="btn">点点点</a>
+      </div>
     </div>
     <tabbar></tabbar>
 
@@ -18,6 +20,12 @@ export default {
   data () {
     return {
 
+    }
+  },
+  methods:{
+    btn(){
+      var g = document.getElementsByClassName('title')
+      console.log('g_query:',g)
     }
   },
   mounted(){
@@ -45,6 +53,7 @@ export default {
 .title{
   text-align: center;
   padding: 20px 0
+  margin-top: 50px;
 }
 
 </style>

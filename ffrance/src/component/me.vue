@@ -52,7 +52,7 @@ export default {
   height: 100%;
   position: fixed;
   color: #000;
-  background: url(../img/me.jpg) no-repeat;
+  background: url(../img/m.jpg) no-repeat;
   background-size: 100% 100%;
   max-width: 768px;
   left: 0;
@@ -91,7 +91,7 @@ export default {
   left: 50%;
   transform: translate(-50%,-50%);
   border-radius: 50%;
-  background: url(../img/head.jpg) no-repeat;
+  background: url(../img/tim.jpg) no-repeat;
   background-size: 100% 100%;
   border: 4px solid #fff;
 }

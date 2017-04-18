@@ -51,27 +51,27 @@ export default {
   },
   methods:{
     login(){
-    //     let vm = this
-    //     const clientId = `user`
-    //     const clientSecret = 'web'
-    //     const username = vm.username
-    //     const password = vm.password
-    //   axios.post('/api/2.1.0/passport/get-token',{
-    //     clientId, clientSecret, username, password
-    //   })
-    //   .then(function (response) {
-    //     if(response.data.Code === 0){
-    //       const token = response.data.Data.AccessToken;
-    //       localStorage.setItem("token",JSON.stringify(token))
-    //       console.log(response.data.Message)
-    //       vm.$router.push('/home')
-    //     }else{
-    //       console.log(response.data.Message)
-    //     }
-    //   })
-    //   .catch(function (response) {
-    //     console.log(response);
-    //   });
+      //   let vm = this
+      //   const clientId = `user`
+      //   const clientSecret = 'web'
+      //   const username = vm.username
+      //   const password = vm.password
+      // axios.post('/api/2.1.0/passport/get-token',{
+      //   clientId, clientSecret, username, password
+      // })
+      // .then(function (response) {
+      //   if(response.data.Code === 0){
+      //     const token = response.data.Data.AccessToken;
+      //     localStorage.setItem("token",JSON.stringify(token))
+      //     console.log(response.data.Message)
+      //     vm.$router.push('/home')
+      //   }else{
+      //     alert(response.data.Message)
+      //   }
+      // })
+      // .catch(function (response) {
+      //   console.error(response);
+      // });
     this.$router.push('/home')
     },
   },
@@ -93,7 +93,7 @@ export default {
   margin 0 auto
   width 100%
   height 100%
-  background-image url(../img/france.jpg)
+  background-image url(../img/login.jpg)
   background-size 100% 100%
 
 .weui-content
@@ -109,7 +109,7 @@ export default {
   height 100%
   position fixed
   background-color #000
-  opacity .5
+  opacity .2
   z-index -1
 
 .france p
@@ -117,8 +117,8 @@ export default {
   color #fff
   font-family '黑体'
   text-align center
-  margin-top 10%
-  margin-bottom 30%
+  margin-top 40px
+  margin-bottom 50px
 
 .weui-cell:before
   display none
@@ -199,4 +199,7 @@ export default {
   &:before
     display none
 
+.weui-cell_bd input::-webkit-input-placeholder
+  color #ccc
+  font-size 14px
 </style>

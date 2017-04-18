@@ -31,7 +31,7 @@ export default {
   height: 100%;
   position: fixed;
   color: #000;
-  background: url(../img/how.jpg) no-repeat;
+  background: url(../img/hw.jpg) no-repeat;
   background-size: 100% 100%;
   max-width: 768px;
   left: 0;

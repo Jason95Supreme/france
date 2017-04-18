@@ -29,6 +29,7 @@ loaders: [
 // 解析ivew文件
 { test: /iview.src.*?js$/, loader: 'babel' },
 // 转化ES6的语法
+//添置 exclude 属性以告知加载器忽略目标目录下的文件，它的值是一个正则表达式，因此我们这样写：/node_modules/
 { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
 // 编译css并自动添加css前缀
 { test: /\.css$/, loader: 'style!css!autoprefixer'},
